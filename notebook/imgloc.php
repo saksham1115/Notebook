@@ -1,0 +1,1 @@
+<?php $newsql = new mysqli("localhost","root","ishallcallhimsebastian","notebook"); $res = $newsql->query("select perid from images where imid=".$_GET['imid'])->fetch_assoc(); echo "./users/".$res['perid']."/".$_GET['imid']; ?>
